@@ -98,16 +98,12 @@
             font-size: 12px;
             font-family: Helvetica;
         }
+        #selectedText{
+            padding-left: 25%;
+        }
         
 
     </style>
-
-<script>
-    function myValue() {
-        var x = document.getElementById("myText").value;
-        updateExtention(x);
-    }
-</script>
 
 </head>
 <body>
@@ -122,10 +118,10 @@
     </div>
     
     <form id="selectedText">
-        <input type="text" id="myText" value="Enter Selected Text...">
-        <button onclick="getValue()">Enter</button>
+        <input type="text" id="myText">
+        <input type="submit" value="Enter" >
     </form>
-    
+
     <div class="modal-content">
         <br>
         <div id = "prompt"></div>
