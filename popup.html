@@ -11,11 +11,12 @@
     <style>
         html, body{
             font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
+            font-size: 18px;
             margin: 0;
             min-height: 180px;
             padding: 0;
             width: 500px;
+            
             
         }
         h1{
@@ -99,8 +100,44 @@
             font-family: Helvetica;
         }
         #selectedText{
-            padding-left: 25%;
+            margin: 25px;
         }
+        a{
+            font-size: 16px;;
+        }
+        input[type="text"]{
+            font-size: 16px;;
+        background: none;
+        border: 2px solid #000000b4;
+        text-align: center;
+        font-family: Arial;
+        width: 150x;
+        outline: none;
+        border-radius: 24px;
+        padding: 8px ;
+        margin: 8px;
+        margin-bottom: 0px;
+        transition: 1s;
+        z-index: 2;
+        color: #000000;
+    
+        }
+
+        input[type = "text"]:focus{
+            width: 250px;
+            transition: 1s;
+        }
+        #btn{
+            font-family: Helvetica;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 2px solid;
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
+            padding: 4px;
+
+        }
+
         
 
     </style>
@@ -118,8 +155,9 @@
     </div>
     
     <form id="selectedText">
-        <input type="text" id="myText">
-        <input type="submit" value="Enter" >
+        <input type="text" id="myText" autocomplete = "off">
+        <input type="submit" value="Enter" id ="btn">
+        <br>
     </form>
 
     <div class="modal-content">
