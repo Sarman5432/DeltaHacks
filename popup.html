@@ -102,6 +102,13 @@
 
     </style>
 
+<script>
+    function myValue() {
+        var x = document.getElementById("myText").value;
+        updateExtention(x);
+    }
+</script>
+
 </head>
 <body>
     <div class="modal-header">
@@ -113,16 +120,12 @@
         <p id = "description">We'll suggest you to check out some related news articles. Yes to being an informed consumer! No to fake news!</p>
 
     </div>
-    <div class="modal-icons">
-        <div class="flex-container">
-            <div class="flex">
-                <a href="https://github.com/Sarman5432/DeltaHacks" target="-blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="flex">
-                <a href="https://newsapi.org/" target="-blank"><i class="far fa-newspaper"></i></a>
-            </div>
-        </div>
-    </div>
+    
+    <form id="selectedText">
+        <input type="text" id="myText" value="Enter Selected Text...">
+        <button onclick="getValue()">Enter</button>
+    </form>
+    
     <div class="modal-content">
         <br>
         <div id = "prompt"></div>
