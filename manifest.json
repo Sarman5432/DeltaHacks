@@ -8,5 +8,9 @@
         "default_icon":"images/logo16.png",
         "default_popup": "popup.html"
     },
+    "background": {
+        "scripts": ["script.js"],
+        "persistent": false
+      },
     "permissions": ["activeTab"]
 }
