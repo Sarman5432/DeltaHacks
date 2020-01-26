@@ -54,8 +54,9 @@ async function updateExtension(phrase){
 
     var data = await loadData(api_key, phrase)
     var html = '';
+    console.log(data);
     for(var i = 0; i < data.articles.length; i++){
-        html += `<a href="` + data.articles[i].url+ '">'+ data.articles[i].title+ '</a>'
+        html += '<a target="_blank" href="' + data.articles[i].url+ '">'+ data.articles[i].title+ '</a>'
             +'<br>' + data.articles[i].publishedAt + '  -  <b>' + data.articles[i].source.name +'</b><br><br>';
     }
 
