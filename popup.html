@@ -15,14 +15,15 @@
             margin: 0;
             min-height: 180px;
             padding: 0;
-            width: 300px;
+            width: 500px;
+            
         }
         h1{
-            font-family: 'Menlo', monospace;
+            font-family: 'Helvetica', sans-serif;
             font-size: 22px;
             font-weight: 400px;
             margin: 0;
-            color: #5e8de2;
+            color: #000000;
         }
         a:link a:visited{
             color: black;
@@ -83,6 +84,20 @@
             font-size: 40px;
             color: #5e8de2;
         }
+        p{
+            font-family: Helvetica;
+            font-size: 14px; 
+            font-style: italic;
+        }
+        #prompt{
+            font-size: 14px;
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+        #articles{  
+            font-size: 12px;
+            font-family: Helvetica;
+        }
         
 
     </style>
@@ -91,11 +106,11 @@
 <body>
     <div class="modal-header">
         <h1 class="logo">
-            <img src="images/logo128.png" alt="" class="logo-icon">DeltaHacks <span class="version">(1.0.0)</span>
+            <img src="images/logo128.png" alt="" class="logo-icon">Forreal <span class="version">(1.0.0)</span>
         </h1>
     </div>
     <div class="modal-content">
-        <p>Highlight any text, and find authors with credentials to clarify the facts. No more fake news!</p>
+        <p id = "description">We'll suggest you to check out some related news articles. Yes to being an informed consumer! No to fake news!</p>
 
     </div>
     <div class="modal-icons">
@@ -109,7 +124,9 @@
         </div>
     </div>
     <div class="modal-content">
-        <p>Showing results for <"highlighted expression first 50 characters...>"<br>Here are some articles we found:</p>
+        <br>
+        <div id = "prompt"></div>
+        <br>
 
         <div id="articles"></div>
     </div>
